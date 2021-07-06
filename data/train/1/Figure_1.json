@@ -1,0 +1,2 @@
+{"caption": "Our model for abstract-caption pair scoring. Paragraphs explicitly mentioning figures are paired with the figure captions during training.",
+ "mention":"Our model consists of two components, a Transformer [11] as a language encoder and a score predictor (Figure 1)."}

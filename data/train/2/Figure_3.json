@@ -1,0 +1,2 @@
+{"caption": "Figure 3. Our model for abstract-caption pair scoring. Paragraphs explicitly mentioning figures are pairedwith the figure captions during training.",
+    "mention":"We describe the model that predicts the appropriateness as a central figure from a given a pair181conisting of an abstract and a figure caption, which is used to evaluate the effectiveness of proposed self-supervised earning. The proposed model consists of a Transformer (Vaswani et al., 2017) encoder with a score prediction layer (Figure 3)."}
