@@ -25,6 +25,10 @@ There are also several conferences providing proceedings as open access.
 We need a figure caption and a paragraph which mentions figure for model training.
 To obtain a figure caption, we used DeepFigures library available here (https://github.com/allenai/deepfigures-open).
 To obtain a paragraph which mentions figure, we used ScienceParse library available here (https://github.com/allenai/science-parse).
+### Training data preparation
+We provide a code to prepare training instance in "data/convert.py". DeepFigures and ScienceParse generate JSON file named \*deepfigures-results.json and \*.pdf.json, respectively. After generating these files, please run "data/convert.py" as below.<br>
+python data/convert.py --scienceparse /path/to/\*.pdf.json --deepfigure /path/to/\*deepfigures-results.json --output_dir /path/to/output<br>
+All figures for a given paper are saved in "/path/to/output".
 
 ## Test Data Preparation
 We prepared the sample test data in "data/test/test_sample.json". The JSON file needs to contain abstract and captions of all figures from a single paper.
@@ -39,5 +43,6 @@ Please send an e-mail to s.yamamoto(at)fuji.waseda.jp
 python test.py --test_data /path/to/test/data.json --model /path/to/model/weight --bert /path/to/BERT/model
 
 ## Trained Model
-We used scibert_base_uncased from here: https://github.com/allenai/scibert
-Under Preparation
+We used scibert_base_uncased from here: https://github.com/allenai/scibert<br>
+* PutMed: https://drive.google.com/file/d/1YIC0qJ5Yp4nnmc5czXCMRyLbkBz7j9Sc/view?usp=sharing
+* CS: https://drive.google.com/file/d/1u9izTjRG53jSsYoO7WgO-t1QSrTeZCA0/view?usp=sharing
